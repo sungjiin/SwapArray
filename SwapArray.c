@@ -6,7 +6,8 @@ void swap(int *px, int *py) {
 	*px = *py;
 	*py = temp;
 
-	printf("%d %d", *px, *py); //그냥 px, py를 쓰게 되면 px와 py의 주소값이 출력된다.
+	printf("%d %d %d ", *px, *py, temp); //그냥 px, py를 쓰게 되면 px와 py의 주소값이 출력된다.
+	printf("\n");
 }
 
 
@@ -28,8 +29,8 @@ void print(int x[][5], int len) {
 		for (j = 0; j<5; j++) {
 			printf("%d ", x[i][j]);
 		}
-		printf("\n");
 	}
+	printf("\n");
 	printf("\n");
 }
 
@@ -47,6 +48,7 @@ void swapArray(int a[][5], int len) {
 		start++;
 		end--;
 	}
+	printf("\n");
 }
 
 int main() {
